@@ -1,0 +1,9 @@
+.venv/
+GigaAM/
+__pycache__/
+*.wav
+*.whl
+
+# Результаты расшифровки и прочие текстовые файлы
+*.txt
+!requirements.txt
