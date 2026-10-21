@@ -1,6 +1,6 @@
-# RuTranscribe
+# LocalTranscribe
 
-Расшифровка интервью из видео в текст с таймкодами и разделением по спикерам. Работает локально на видеокарте NVIDIA.
+Локальная расшифровка видео в текст с таймкодами и разделением по спикерам. Всё работает на вашей видеокарте NVIDIA, без облачных сервисов.
 
 - **Русский** (по умолчанию) — [GigaAM-v3](https://github.com/salute-developers/GigaAM)
 - **Английский** (`--lang en`) — [Whisper large-v3](https://github.com/openai/whisper) через [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
@@ -39,10 +39,10 @@
 ## Запуск
 
 ```
-run.bat interview.mp4 -o interview.txt                          # русский
-run.bat interview.mp4 -o interview.txt --lang en                # английский
-run.bat interview.mp4 -o interview.txt --lang en --speakers 2   # точное число спикеров
-run.bat interview.mp4 -o interview.txt --speakers 1             # без разделения по спикерам
+run.bat video.mp4 -o video.txt                          # русский
+run.bat video.mp4 -o video.txt --lang en                # английский
+run.bat video.mp4 -o video.txt --lang en --speakers 2   # точное число спикеров
+run.bat video.mp4 -o video.txt --speakers 1             # без разделения по спикерам
 ```
 
 | Флаг | Что делает |

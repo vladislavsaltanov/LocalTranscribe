@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Транскрипция интервью: GigaAM-v3 (русский) или Whisper (английский) по словам + pyannote (спикеры).
+"""Транскрипция видео: GigaAM-v3 (русский) или Whisper (английский) по словам + pyannote (спикеры).
 
 Запуск:
     set HF_TOKEN=hf_xxx
-    run.bat interview.mp4 -o interview.txt
-    run.bat interview.mp4 -o interview.txt --lang en --speakers 2
+    run.bat video.mp4 -o video.txt
+    run.bat video.mp4 -o video.txt --lang en --speakers 2
 """
 import argparse
 import contextlib
